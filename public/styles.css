@@ -1,0 +1,293 @@
+body{
+    background-color: transparent;
+    font-family: 'Raleway', sans-serif;
+    color: #848794;
+}
+
+
+html {
+   background-image: url("./images/bg-desktop.png");
+   min-height: 100%;
+   width: 100vw;
+   background-size: auto;
+   -webkit-background-size: fixed;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-repeat: no-repeat;
+   background-position: bottom center;
+   background-color:#0C122C;
+   background-attachment: fixed;
+}
+
+/* Wrap Container */
+
+.container{
+    margin-top: 18%;
+    padding: 0;
+}
+
+
+.row {
+    position: relative;
+ 
+    margin: 0;
+
+}
+
+/* Container */
+.logo-container{
+    height: 180px;
+    width: 350px;
+    background-color: #1D2C67;
+    border-radius: 10px;
+    border-top-right-radius: 100px;
+    position: relative;
+    margin-left: 25%;
+}
+
+.input-container {
+  
+    background-color: #1D2C67;
+    height: 140px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+    top: 40px;
+}
+
+/* Logo, icon  */
+
+.logo{
+    display: block;
+    padding: 30px 0 0 30px;
+    
+}
+
+.icon-image{
+    background-color: #0C122C;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px; 
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    
+}
+
+.document{
+    top: 55%;
+    left: 30px;
+}
+
+.folder{
+    top: 55%;
+    left: 90px;
+}
+
+.upload{
+    top: 55%;
+    left: 150px;
+}
+
+.document > img {
+    margin-top: 10px;
+    margin-left: 1px;
+}
+
+.folder > img {
+    margin-top: 12px;
+    margin-left: 1px;
+}
+
+.upload > img {
+    margin-top: 14px;
+    margin-left: 1px;
+}
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    background: transparent;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+  input[type=range]:focus {
+    outline: none;
+}
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 200px;
+    height: 20px;
+    background: linear-gradient(45deg,#FFA399,	#FF4D97);
+    border: none;
+    border-radius: 10px;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background:#fff;
+    margin-top: 2px;
+  }
+
+.storage-used-msg{
+    position: relative;
+    width: 80%;
+    top: 20%;
+    left: 10%;
+}
+
+.min-storage{
+    display: inline-block;
+    position: absolute;
+    top: 65%;
+    left: 10%;   
+}
+
+.max-storage{
+    position: absolute;
+    top: 65%;
+    right: 10%;
+}
+
+
+.storage-card {
+    position: absolute;
+    right: 10%;
+    bottom: 100px;
+}
+
+.storage-left {
+    position: relative;
+    width: auto;
+	background: #DDDBFF;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.storage-left:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: auto;
+	border: 38px solid transparent;
+	border-top-color: 	#DDDBFF;
+	border-bottom: 0;
+	border-right: 10px;
+	margin-left: -23px;
+	margin-bottom: -20px;
+}
+
+.storage-left-msg {
+    font-size: xx-large;
+    font-weight: 700;
+    color: #0C122C;
+}
+  
+span{
+    color: #DDDBFF;
+    font-weight: bold;
+}
+
+@media (max-height: 700px) {
+    .container {
+        margin-top: 25%;
+    }
+ }
+
+@media (max-width: 1198.98px) {
+    
+     html {
+         background-image: url("./images/bg-mobile.png");
+         background-size: cover;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+        
+     }
+
+     .container {
+         margin: 25% auto;
+     }
+
+    .logo-container {
+        width: 90%;
+        margin: 0 auto ;
+        height: 250px;
+        position: relative;
+        padding-top: 10px;
+
+    }
+
+    .logo {
+        width: fit-content;
+        margin-top: 10px;
+    }
+
+    .icon-image {
+        height: 50px;
+        width: 50px;
+       
+    }
+
+    .document {
+       left: fit-content;
+       
+    }
+
+    .folder {
+        left: fit-content;
+    }
+
+    .upload {
+        left: fit-content;
+    }
+
+    .input-container {
+        width: 90%;
+        height: 200px;
+        margin: 0 auto;
+        position: relative;
+        top: 20%;
+    }
+
+    input[type="range"] {
+       
+        position: absolute;
+        top: 25%;
+    }
+    
+    .min-storage {
+        top: 50%;
+    }
+
+    .max-storage {
+        top: 50%;
+    }
+
+    .storage-card {
+        position: absolute;
+        top: 75%;
+        right: 25%;
+        left: 25%;
+        text-align: center;
+    }
+
+   .storage-used-msg {
+       text-align: center;
+       font-size: fit-content;
+   }
+
+    .storage-left:after {
+        display: none;
+    }
+}
